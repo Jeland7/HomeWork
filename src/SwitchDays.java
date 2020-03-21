@@ -29,14 +29,23 @@ public class SwitchDays {
         
         switch (day) {
 //note: a switch statement accepts a constant expression/variable of type String only starting with Java version 7; in earlier versions the compiler shows an "incompatible types" error.
-            case "monday": System.out.println("Evening classes at 19:00"); break;
-            case "tuesday": System.out.println("No classes"); break;
-            case "wednesday": System.out.println("Evening classes at 19:00"); break;
-            case "thursday": System.out.println("No classes"); break;
-            case "friday": System.out.println("No classes"); break;
-            case "saturday": System.out.println("Whole day Labs :)"); break;
-            case "sunday": System.out.println("It's finally Sunday!"); 
-            default:System.out.println("Check your input bro"); break;
+            case "monday": 
+            case "wednesday":
+            	System.out.println("Evening classes at 19:00"); 
+            	break;
+            case "tuesday": 
+            case "thursday": 
+            case "friday": 
+            	System.out.println("No classes"); 
+            	break;
+            case "saturday": 
+            	System.out.println("Whole day Labs :)"); 
+            	break;
+            case "sunday": 
+            	System.out.println("It's finally Sunday!"); 
+            default:
+            	System.out.println("Check your input bro"); 
+            	break;
         
         } //end of switch
     }//end of main
